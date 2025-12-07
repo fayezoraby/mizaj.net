@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizaj Coffee Machines - Premium Coffee Solutions UAE</title>
+    <meta name="description" content="Mizaj Coffee Machines - Leading supplier of coffee vending machines for rental and sale in UAE. 24/7 service, premium quality, competitive prices.">
+    <meta name="keywords" content="coffee machine rental dubai, coffee vending machine uae, coffee machine sales, office coffee solutions">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1 class="logo">MIZAJ</h1>
+                    <span class="tagline">Coffee Machines</span>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#machines" class="nav-link">Machines</a></li>
+                    <li class="nav-item"><a href="#supplies" class="nav-link">Supplies</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item highlight"><a href="#quote" class="nav-link quote-link">Get Quote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Premium Coffee & Hot Beverage Solutions
+                        <span class="highlight">Across UAE</span>
+                    </h1>
+                    <p class="hero-description">
+                        Rent • Buy • Service - Complete vending solutions for your business. 
+                        Serving 500+ UAE businesses with 24/7 technical support.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Businesses Served</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Same Day</span>
+                            <span class="stat-label">Dubai Delivery</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="showQuoteModal()">
+                            <i class="fas fa-calculator"></i> Get Free Quote
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('machines')">
+                            <i class="fas fa-coffee"></i> Browse Machines
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="machine-showcase">
+                        <div class="machine-card">
+                            <i class="fas fa-coffee-machine"></i>
+                            <span>Premium Machines</span>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="coffee-cup">
+                                <i class="fas fa-mug-hot"></i>
+                            </div>
+                            <div class="steam-effect"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Complete Service Solutions</h2>
+            <p class="section-subtitle">Everything you need for perfect coffee service</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Machine Rental</h3>
+                    <p>Flexible rental plans from AED 500/month</p>
+                    <ul class="service-features">
+                        <li>Free installation & training</li>
+                        <li>Monthly maintenance included</li>
+                        <li>24/7 technical support</li>
+                        <li>Upgrade anytime</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="showQuoteModal('rental')">View Plans</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Machine Sales</h3>
+                    <p>Purchase new or refurbished machines</p>
+                    <ul class="service-features">
+                        <li>Warranty included</li>
+                        <li>Trade-in options available</li>
+                        <li>Financing plans</li>
+                        <li>Installation support</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="scrollToSection('machines')">Browse Machines</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Supplies & Service</h3>
+                    <p>Everything your machine needs</p>
+                    <ul class="service-features">
+                        <li>Premium coffee & beverages</li>
+                        <li>Cleaning supplies</li>
+                        <li>Spare parts</li>
+                        <li>Subscription service</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="scrollToSection('supplies')">Order Supplies</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Machines Section -->
+    <section id="machines" class="machines">
+        <div class="container">
+            <h2 class="section-title">Our Coffee Machines</h2>
+            <p class="section-subtitle">Professional solutions for every business</p>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Machines</button>
+                <button class="filter-btn" data-filter="rental">For Rental</button>
+                <button class="filter-btn" data-filter="purchase">For Purchase</button>
+            </div>
+            
+            <div class="machines-grid">
+                <div class="machine-card" data-category="rental">
+                    <div class="machine-image">
+                        <i class="fas fa-coffee-machine"></i>
+                    </div>
+                    <div class="machine-info">
+                        <h3>Saeco Aulika Focus</h3>
+                        <div class="machine-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 120 cups/day</span>
+                            <span><i class="fas fa-coffee"></i> 8 varieties</span>
+                            <span><i class="fas fa-leaf"></i> A++ Energy</span>
+                        </div>
+                        <div class="machine-pricing">
+                            <div class="rental-price">AED 650/month</div>
+                            <div class="purchase-price">or buy AED 8,500</div>
+                        </div>
+                        <button class="btn btn-primary" onclick="showQuoteModal('saeco')">
+                            Request Demo
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="machine-card" data-category="purchase">
+                    <div class="machine-image">
+                        <i class="fas fa-coffee-machine"></i>
+                    </div>
+                    <div class="machine-info">
+                        <h3>Nescafe Milano</h3>
+                        <div class="machine-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 200 cups/day</span>
+                            <span><i class="fas fa-coffee"></i> 12 varieties</span>
+                            <span><i class="fas fa-leaf"></i> A+ Energy</span>
+                        </div>
+                        <div class="machine-pricing">
+                            <div class="rental-price">AED 850/month</div>
+                            <div class="purchase-price">or buy AED 12,500</div>
+                        </div>
+                        <button class="btn btn-primary" onclick="showQuoteModal('milano')">
+                            Request Demo
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="machine-card" data-category="rental">
+                    <div class="machine-image">
+                        <i class="fas fa-coffee-machine"></i>
+                    </div>
+                    <div class="machine-info">
+                        <h3>DeLonghi PrimaDonna</h3>
+                        <div class="machine-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 80 cups/day</span>
+                            <span><i class="fas fa-coffee"></i> 6 varieties</span>
+                            <span><i class="fas fa-leaf"></i> A++ Energy</span>
+                        </div>
+                        <div class="machine-pricing">
+                            <div class="rental-price">AED 450/month</div>
+                            <div class="purchase-price">or buy AED 6,200</div>
+                        </div>
+                        <button class="btn btn-primary" onclick="showQuoteModal('delonghi')">
+                            Request Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Calculator Section -->
+    <section id="quote" class="quote-calculator-section">
+        <div class="container">
+            <h2 class="section-title">Instant Quote Calculator</h2>
+            <p class="section-subtitle">Get personalized pricing in seconds</p>
+            
+            <div class="calculator-container">
+                <form class="quote-form" id="quoteForm">
+                    <div class="form-group">
+                        <label>Business Type</label>
+                        <select name="businessType" required>
+                            <option value="">Select Type</option>
+                            <option value="office">Corporate Office</option>
+                            <option value="healthcare">Healthcare Facility</option>
+                            <option value="education">Educational Institution</option>
+                            <option value="industrial">Industrial/Factory</option>
+                            <option value="retail">Retail/Hospitality</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Daily Cup Requirement</label>
+                        <input type="range" name="dailyCups" min="20" max="500" value="100" 
+                               oninput="updateCupDisplay(this.value)">
+                        <span id="cupDisplay">100 cups/day</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Service Type</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="serviceType" value="rental" checked>
+                                <span>Rental Only</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="serviceType" value="fullService">
+                                <span>Full Service</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="serviceType" value="purchase">
+                                <span>Purchase</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-calculator"></i> Get Instant Quote
+                    </button>
+                </form>
+                
+                <div class="quote-result" id="quoteResult" style="display: none;">
+                    <h3>Your Personalized Quote</h3>
+                    <div class="quote-details" id="quoteDetails"></div>
+                    <button class="btn btn-primary" onclick="bookDemo()">
+                        <i class="fas fa-calendar"></i> Book Free Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to transform your coffee experience?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+971 4 123 4567</p>
+                            <small>24/7 Technical Support</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@mizaj.net</p>
+                            <small>Response within 2 hours</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>Dubai Investment Park<br>Dubai, UAE</p>
+                            <small>Sunday - Thursday: 8AM - 6PM</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Company Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell us about your coffee needs..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mizaj Coffee Machines</h3>
+                    <p>Premium coffee solutions for businesses across UAE. Rent, buy, or service your coffee machines with the leading supplier in the region.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#machines">Machines</a></li>
+                        <li><a href="#supplies">Supplies</a></li>
+                        <li><a href="#quote">Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Machine Rental</a></li>
+                        <li><a href="#">Machine Sales</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Supplies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +971 4 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@mizaj.net</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai Investment Park</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mizaj Coffee Machines Selling & Rental LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuoteModal()">&times;</span>
+            <h2>Request a Quote</h2>
+            <form id="modalQuoteForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="company" placeholder="Company Name">
+                </div>
+                <div class="form-group">
+                    <select name="serviceType" required>
+                        <option value="">Select Service Type</option>
+                        <option value="rental">Machine Rental</option>
+                        <option value="purchase">Machine Purchase</option>
+                        <option value="supplies">Supplies Order</option>
+                        <option value="service">Maintenance Service</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Tell us about your requirements..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
